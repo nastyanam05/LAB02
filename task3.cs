@@ -1,7 +1,8 @@
 using System;
 
-namespace lab2
+namespace task3
 {
+    // Базовый класс DocumentWorker
     public class DocumentWorker
     {
         public void OpenDocument()
@@ -20,6 +21,7 @@ namespace lab2
         }
     }
 
+    // Производный класс ProDocumentWorker
     public class ProDocumentWorker : DocumentWorker
     {
         public override void EditDocument()
@@ -33,6 +35,7 @@ namespace lab2
         }
     }
 
+    // Производный класс ExpertDocumentWorker
     public class ExpertDocumentWorker : ProDocumentWorker
     {
         public override void SaveDocument()
